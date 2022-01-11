@@ -1,33 +1,33 @@
 extends layout.pug
 block content
+  h1  Student Page:
+    h2  Hey There!
+    p   Find your course here
 
-    title= Student Page
-    h1 = Student Page:
-     h2 = Hey There!
-      p =  Find your course here
-
-      table = style="width:50%"
-        tr
-         th = Software Development 2 
-           a(href="https://moodle.roehampton.ac.uk/course/view.php?id=10989") Visit moodle
+    table
+      tr
+        th  Software Development 2 
+          a(href="https://moodle.roehampton.ac.uk/course/view.php?id=10989") Visit moodle
+        form 
+          label(name = "Comment")
+          input(type="text")
+          input(type="submit" value="Submit")
+        <br>  
+        
+  
+        th  Databases 
+          a(href="https://moodle.roehampton.ac.uk/course/view.php?id=10743") Visit moodle
           form 
-           label(name = "Comment")
-            input(type="text")
-             input(type="submit" value="Submit")
-            
-          
-    
-          th = Databases 
-            a(href="https://moodle.roehampton.ac.uk/course/view.php?id=10743") Visit moodle
-           form 
-            label(name = "Comment")
-            input(type="text")
-            input(type="submit" value="Submit")
+          label(name = "Comment")
+          input(type="text")
+          input(type="submit" value="Submit")
+          <br>
 
 
-          th = Cyber Security 
-           a(href="moodle.roehampton.ac.uk/course/view.php?id=10990") Visit moodle
-          form 
-           label(name = "Comment")
-            input(type="text")
-            input(type="submit" value="Submit")
+        th  Cyber Security 
+          a(href="moodle.roehampton.ac.uk/course/view.php?id=10990") Visit moodle
+        form 
+          label(name = "Comment")
+          input(type="text")
+          input(type="submit" value="Submit")
+          <br>

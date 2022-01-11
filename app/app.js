@@ -106,6 +106,10 @@ app.post('/set-password', function(req, res){
     params = req.body;
     var user = new User(params.u_id)
 })
+app.get('/StudentPage', function(req, res){
+   // console.log(req.params);
+    res.render('StudentPage');
+})
 
 // Check submitted email and password pair
 app.post('/authenticate', function (req, res) {
