@@ -1,0 +1,11 @@
+extends layout
+block content
+    h1 Login here
+    form(action='/authenticate' method='POST')
+        label(for='u_email') Enter your email: 
+        input('name'='u_email') 
+        <br>
+        label(for='u_email') Enter your password: 
+        input('name'='u_password')
+        <br>
+        input(type='submit' value='Submit')

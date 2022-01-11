@@ -1,0 +1,14 @@
+extends layout.pug
+block content
+    h1 Register here
+    form(action='/set-password' method='POST')
+        label(for='u_email') Enter your email: 
+        input('name'='u_email') 
+        <br>
+        label(for='u_email') Enter your password: 
+        input('name'='u_password')
+        <br>
+        label(for='u_name') Enter your username: 
+        input('name'='u_name')
+        <br>
+        input(type='submit', value='Submit')
