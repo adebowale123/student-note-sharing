@@ -40,3 +40,6 @@ class Notes{
         }
     }
 }
+module.exports = {
+    Notes
+}
