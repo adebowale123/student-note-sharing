@@ -46,6 +46,24 @@ app.get('/logout', function (req, res) {
     res.redirect('/login');
   });
 
+  app.get('/StudentPage', function(req, res){
+    // console.log(req.params);
+     res.render('StudentPage');
+ });
+ 
+ app.get('/software-development-2-note', function(req, res){
+      // console.log(req.params);
+       res.render('software-development-2-note');
+ });
+ app.get('/database-note', function(req, res){
+     // console.log(req.params);
+      res.render('database-note');
+ });
+ app.get('/CyberSecurity-note', function(req, res){
+    // console.log(req.params);
+     res.render('CyberSecurity-note');
+});
+
 
 // Create a route for root - /
 app.get("/", function(req, res) {
@@ -106,10 +124,7 @@ app.post('/set-password', function(req, res){
     params = req.body;
     var user = new User(params.u_id)
 })
-app.get('/StudentPage', function(req, res){
-   // console.log(req.params);
-    res.render('StudentPage');
-})
+
 
 // Check submitted email and password pair
 app.post('/authenticate', function (req, res) {

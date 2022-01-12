@@ -1,0 +1,47 @@
+head
+  title database-note
+  style.
+    body {
+    border: 2px solid black;
+    padding: 30px;
+    }
+    table, th {
+    border: 1px solid black;
+    padding: 50px;
+    }
+    table {
+    border-spacing: 30px;
+    }
+    .button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+   
+header
+  h1 Database Note:
+h2 Write Note
+
+table(style='width:50%')
+  tr
+    th
+      p  Database Note
+        label Note Id:
+        br
+        br
+        input(type='text')
+        br
+        br
+        label(for='input') note:
+        br
+        textarea(id="input" name="input" rows="6" cols="50")
+        br
+        br
+        input(type='submit' value='Submit')
+        br

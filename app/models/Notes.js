@@ -23,7 +23,7 @@ class Notes{
         return true;
     }
 
-// update existing note
+    // update existing note
     async addExistingNote(note) {
         var sql = "UPDATE notes SET note = ? WHERE u_id = ?"
         const result = await db.query(sql, [note, this.u_id]);
@@ -31,7 +31,7 @@ class Notes{
         this.note = note;
         return result;
     }
-// view existing notes 
+    // view existing notes 
     async getNoteName() {
         if (typeof this.note !== 'string') {
             var sql = "SELECT * from note where n_id = ?"
@@ -39,10 +39,4 @@ class Notes{
             this.note = results[0].note;
         }
     }
-}
-    
-
-
-module.exports = {
-    Notes,
 }

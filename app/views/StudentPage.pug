@@ -1,33 +1,78 @@
-extends layout.pug
-block content
-  h1  Student Page:
-    h2  Hey There!
-    p   Find your course here
-
-    table
-      tr
-        th  Software Development 2 
-          a(href="https://moodle.roehampton.ac.uk/course/view.php?id=10989") Visit moodle
-        form 
-          label(name = "Comment")
-          input(type="text")
-          input(type="submit" value="Submit")
-        <br>  
-        
-  
-        th  Databases 
-          a(href="https://moodle.roehampton.ac.uk/course/view.php?id=10743") Visit moodle
-          form 
-          label(name = "Comment")
-          input(type="text")
-          input(type="submit" value="Submit")
-          <br>
-
-
-        th  Cyber Security 
-          a(href="moodle.roehampton.ac.uk/course/view.php?id=10990") Visit moodle
-        form 
-          label(name = "Comment")
-          input(type="text")
-          input(type="submit" value="Submit")
-          <br>
+head
+  title Student Page
+  style.
+    body {
+    border: 2px solid black;
+    padding: 30px;
+    }
+    table, th {
+    border: 1px solid black;
+    padding: 50px;
+    }
+    table {
+    border-spacing: 30px;
+    }
+    .button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+   .button {background-color: #4CAF50;}
+header
+  h1 Note sharing :
+h2 Moodules
+p
+  b Find your course here
+table(style='width:50%')
+  tr
+    th
+      | Software Development 2 
+      br
+      a(href='https://moodle.roehampton.ac.uk/course/view.php?id=10989') Visit moodle
+      form
+        label Comment:
+        br
+        br
+        input(type='text')
+        br
+        br
+        input(type='submit' value='Submit')
+        br
+        br
+        button(class='button' button='Green') Note
+    th
+      | Databases 
+      br
+      a(href='https://moodle.roehampton.ac.uk/course/view.php?id=10743') Visit moodle
+      form
+        label Comment:
+        br
+        br
+        input(type='text')
+        br
+        br
+        input(type='submit' value='Submit')
+        br
+        br
+        button(class='button' button='Green') Note
+    th
+      | Cyber Security 
+      br
+      a(href='moodle.roehampton.ac.uk/course/view.php?id=10990') Visit moodle
+      form
+        label Comment:
+        br
+        br
+        input(type='text')
+        br
+        br
+        input(type='submit' value='Submit')
+        br
+        br
+        button(class='button' button='Green') Note
