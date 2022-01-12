@@ -45,6 +45,10 @@ app.get('/logout', function (req, res) {
     req.session.destroy();
     res.redirect('/login');
   });
+  app.get('/Home', function(req, res){
+    // console.log(req.params);
+     res.render('Home');
+});
 
   app.get('/StudentPage', function(req, res){
     // console.log(req.params);
